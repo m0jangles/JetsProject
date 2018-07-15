@@ -59,11 +59,16 @@ public class Airfield {
 
 	public void getFastestJet() {
 
-		Jet[] speeds = getJets();
-		Jet minSpeed = speeds[0];
-		for (Jet jet : speeds) {
+		Jet minSpeed = jets[0];
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				if (jets[i].getSpeed() > minSpeed.getSpeed()) {
+					minSpeed = jets[i];
+				}
+			}
 
 		}
+		System.out.println(minSpeed.toString());
 
 	}
 
