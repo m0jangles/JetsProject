@@ -59,17 +59,12 @@ public class JetsApplication {
 				break;
 			case 5:
 				System.out.println("____________________________");
-
-//				for (Jet Jet: jets) {
-//					if(jet[i] instanceOf CargoPlane) {
-//						jet.loadCargo();
-//					}
-
+				af.loadCargo();
 				pickAgain();
 				break;
 			case 6:
 				System.out.println("____________________________");
-//			Dogfight!
+				af.dogFight();
 				pickAgain();
 				break;
 			case 7:

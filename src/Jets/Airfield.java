@@ -76,12 +76,36 @@ public class Airfield {
 		Jet minRange = jets[0];
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
-				if (jets[i].getRange()> minRange.getRange()) {
+				if (jets[i].getRange() > minRange.getRange()) {
 					minRange = jets[i];
 				}
 			}
 
 		}
 		System.out.println(minRange.toString());
+	}
+
+	public void loadCargo() {
+		Jet[] jets = getJets();
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] instanceof CargoPlane) {
+				if (jets[i] != null) {
+					System.out.println(jets[i].getModel() + "...Loading cargo");
+				}
+
+			}
+		}
+	}
+
+	public void dogFight() {
+		Jet[] jets = getJets();
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] instanceof FighterJet) {
+				if (jets[i] != null) {
+					System.out.println(jets[i].getModel() + "...dogs are out");
+
+				}
+			}
+		}
 	}
 }
