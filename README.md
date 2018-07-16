@@ -18,4 +18,5 @@
  ### Lessons Learned
  This was really hard but I'm that much closer to feeling one with arrays.  Each time I connect a dot, I feel like I can move mountains, however, I found that super small mistakes were harder to find and that a second set of eyes can be invaluable to one's sanity.  We can't always have a partner to program with and this is when good programming habits come in handy.
 
- I wasted a lot of time not asking for help.
+ I wasted a lot of time not asking for help OR I took my time to research ways to accomplish
+ some of the requirements.  Same, same.  p.s. second set of eyes is gold.
