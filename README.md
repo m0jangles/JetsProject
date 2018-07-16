@@ -14,7 +14,7 @@
  - inheritance
  - encapsulation
  - arrays are hard
- - sometimes you think you're iterating variables of an array's elements but really
+ - sometimes you think you're iterating values of an array's elements but really
  you are just iterating objects and that's a hard lesson
  - iterating, iterating, iterating
  - SCOPE!!
