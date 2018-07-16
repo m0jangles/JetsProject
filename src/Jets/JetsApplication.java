@@ -46,6 +46,7 @@ public class JetsApplication {
 				for (Jet jet : jets) {
 					jet.fly();
 				}
+				af.calculateFlyTime();
 				pickAgain();
 				break;
 			case 3:

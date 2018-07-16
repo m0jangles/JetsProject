@@ -108,4 +108,18 @@ public class Airfield {
 			}
 		}
 	}
+
+	public void calculateFlyTime() {
+		// this is a calculation of the time it takes a jet to travel
+		// based on speed and range
+		// time = distance/speed
+
+		Jet[] jets = getJets();
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				double time = (jets[i].getRange() / jets[i].getSpeed());
+				System.out.println(jets[i].getModel() + "\t" + ((int)(time + 0.5)));
+			}
+		}
+	}
 }
