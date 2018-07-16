@@ -15,7 +15,6 @@ public class JetsApplication {
 
 		Scanner sc = new Scanner(System.in);
 
-
 		int choice = 0;
 
 		System.out.println("Jet Menu");
@@ -36,7 +35,7 @@ public class JetsApplication {
 			switch (choice) {
 			case 1:
 				System.out.println("____________________________");
-				
+
 				for (Jet jet : jets) {
 					jet.displayData();
 				}
@@ -57,17 +56,15 @@ public class JetsApplication {
 			case 4:
 				System.out.println("____________________________");
 				af.getLongestRange();
-//				will be similar to fastest speed method
 				break;
 			case 5:
 				System.out.println("____________________________");
-				
+
 //				for (Jet Jet: jets) {
 //					if(jet[i] instanceOf CargoPlane) {
 //						jet.loadCargo();
 //					}
-				
-				
+
 				pickAgain();
 				break;
 			case 6:
@@ -101,6 +98,5 @@ public class JetsApplication {
 		System.out.println("Pick something else");
 		System.out.println("____________________________");
 	}
-
 
 }

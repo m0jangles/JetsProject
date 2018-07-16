@@ -73,12 +73,15 @@ public class Airfield {
 	}
 
 	public void getLongestRange() {
-		Jet[] ranges = getJets();
-		Jet minRange = ranges[0];
-		for (Jet jet : ranges) {
-			jet.getRange();
-			System.out.println(jet.getRange());
+		Jet minRange = jets[0];
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				if (jets[i].getRange()> minRange.getRange()) {
+					minRange = jets[i];
+				}
+			}
 
 		}
+		System.out.println(minRange.toString());
 	}
 }
